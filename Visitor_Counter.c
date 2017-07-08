@@ -1,7 +1,7 @@
 #include<avr/io.h>
 #include<util/delay.h>
 #include<string.h>
-
+// Initialising LCD
 void cmd()
 { 
  PORTC = 0x04;
@@ -25,7 +25,7 @@ void splfn()
   cmd();
  }
 }
-
+// Fn to print a integer on LCD
 void disp_int(int x)
 {
   int y=1;
